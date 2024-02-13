@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="AvaloniaApplication3/AddUpd.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/App.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Form2.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/MainWindow.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Гости.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Инструкторы.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Клиенты.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Сотрудники.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

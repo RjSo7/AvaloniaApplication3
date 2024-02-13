@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DobOb.AddUpd"
+        Background="#F7102D36"
+        Title="Добавление и редактирование данных">
+    <Grid>
+        <UniformGrid Columns="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">ID: </TextBlock>
+                <TextBox Name="Kod" x:CompileBindings="False" Text="{Binding Код}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Фамилия клиента: </TextBlock>
+                <TextBox Name="Familia" x:CompileBindings="False" Text="{Binding Фамилия}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Имя: </TextBlock>
+                <TextBox Name="Name" x:CompileBindings="False" Text="{Binding Имя}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Стаж_работы: </TextBlock>
+                <TextBox Name="Staj" x:CompileBindings="False" Text="{Binding Стаж_работы}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Код_квалификация: </TextBlock>
+                <TextBox Name="Kval" x:CompileBindings="False" Text="{Binding Код_квалификация}" Width="500" Height="80" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Код_специализация: </TextBlock>
+                <TextBox Name="Cpez" x:CompileBindings="False" Text="{Binding Код_специализация}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Save" Content="Сохранить" Click="Save_OnClick"  Margin = "10 15 0 20"></Button>
+                <Button Name="Back" Content="Назад" Click="GoBack"  Margin = "50 15 0 20"></Button>
+            </StackPanel>
+        </UniformGrid>
+    </Grid>
+</Window>
