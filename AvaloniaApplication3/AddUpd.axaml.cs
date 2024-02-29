@@ -13,27 +13,27 @@ namespace DobOb;
 
 public partial class AddUpd : Window
 {
-    private List<Instructor> Instructorr;
-    private Instructor CurrentInstructor;
-    public AddUpd( Instructor currentInstructor, List<Instructor> instructorr)
+    private List<Teachers> Teacherr;
+    private Teachers _currentTeachers;
+    public AddUpd( Teachers currentTeachers, List<Teachers> teacherr)
     {
         InitializeComponent();
-        CurrentInstructor = currentInstructor;
-        this.DataContext = CurrentInstructor;
-        Instructorr = instructorr;
+        _currentTeachers = currentTeachers;
+        this.DataContext = _currentTeachers;
+        Teacherr = teacherr;
     }
     private MySqlConnection conn;
-    private string connStr = "server=localhost;database=complex;port=3306;User Id=root;password=Qwertyu1!ZZZ";
+    private string connStr = "server=localhost;database=school;port=3306;User Id=root;password=Qwertyu1!ZZZ";
     private void Save_OnClick(object? sender, RoutedEventArgs e)
     {
-        var instructorr = Instructorr.FirstOrDefault(x => x.Код == CurrentInstructor.Код);
-        if (instructorr == null)
+        var teacherr = Teacherr.FirstOrDefault(x => x.Код == _currentTeachers.Код);
+        if (teacherr == null)
         {
             try
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string add = "INSERT INTO инструктор (Код, Фамилия, Имя, Стаж_работы, Код_квалификация, Код_специализация) VALUES (" + Convert.ToInt32(Kod.Text) + ", '" + Familia.Text + "', '" + Name.Text + "', '" + Staj.Text + "', '" + Convert.ToInt32(Kval.Text) + "', " + Convert.ToInt32(Cpez.Text) + ");";
+                string add = "INSERT INTO учителя VALUES (" + Convert.ToInt32(Kod.Text)+ ", '" + Familia.Text + "', '" + Name.Text + "', '" + Otchestvo.Text + "', " + Convert.ToInt32(Staj.Text ) + ", '"+ Klass.Text + "', " + Convert.ToInt32(Kab.Text ) + ", " + Convert.ToInt32(Pred.Text )+");";
                 MySqlCommand cmd = new MySqlCommand(add, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -49,7 +49,7 @@ public partial class AddUpd : Window
             {
                 conn = new MySqlConnection(connStr);
                 conn.Open();
-                string upd = "UPDATE инструктор SET Фамилия = '" +Familia.Text + "', Имя = '" + Name.Text + "', Стаж_работы = '" + Staj.Text + "', Код_квалификация = '" + Convert.ToInt32(Kval.Text)  + "', Код_специализация = " + Convert.ToInt32(Cpez.Text) + " WHERE Код = " + Convert.ToInt32(Kod.Text) + ";";
+                string upd = "UPDATE учителя SET Фамилия = '" + Familia.Text + "', Имя = '" + Name.Text + "', Отчество = '" + Otchestvo.Text + "',Стаж_работы = "+ Convert.ToInt32(Staj.Text) + ", Классное_руководство = '" + Klass.Text + "', Код_кабинет = "+ Convert.ToInt32(Kab.Text) + ", Код_предмета = "+ Convert.ToInt32(Pred.Text)+ " WHERE Код = " + Convert.ToInt32(Kod.Text) + ";";
                 MySqlCommand cmd = new MySqlCommand(upd, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -63,8 +63,8 @@ public partial class AddUpd : Window
 
     private void GoBack(object? sender, RoutedEventArgs e)
     {
-        AvaloniaApplication3.Инструкторы instructorr = new AvaloniaApplication3.Инструкторы();
+        AvaloniaApplication3.Учителя teacherr = new AvaloniaApplication3.Учителя();
         this.Close();
-        instructorr.Show(); 
+        teacherr.Show(); 
     }
 }

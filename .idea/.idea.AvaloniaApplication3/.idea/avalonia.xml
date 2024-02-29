@@ -7,10 +7,18 @@
         <entry key="AvaloniaApplication3/App.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Form2.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/MainWindow.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Schedule.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/UserControl1.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Гости.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Инструкторы.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Клиенты.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Кружки.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Кружкии.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Расписание.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
         <entry key="AvaloniaApplication3/Сотрудники.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Уроки.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Ученики.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
+        <entry key="AvaloniaApplication3/Учителя.axaml" value="AvaloniaApplication3/AvaloniaApplication3.csproj" />
       </map>
     </option>
   </component>

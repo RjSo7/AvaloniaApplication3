@@ -29,8 +29,17 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/Инструкторы.axaml]
+[C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/Кружкии.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/Клиенты.axaml]
+[C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/Расписание.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/Уроки.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/Ученики.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Пользователь/RiderProjects/AvaloniaApplication3/AvaloniaApplication3/Учителя.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

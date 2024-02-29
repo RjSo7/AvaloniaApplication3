@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Background="#F7057F7F"
+        Title="Таблица Кружки(внеурочные занятия)"
+        Height="500"
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        x:Class="AvaloniaApplication3.Кружкии">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Кружки"</TextBlock>
+            <DataGrid Name="MugsGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Код" Binding="{Binding Код}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Название}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Код_учителя" Binding="{Binding Код_учителя}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Кол_учеников" Binding="{Binding Кол_учеников}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Время" Binding="{Binding Время}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Дни_недели" Binding="{Binding Дни_недели}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <Button Name="Back" Content="Назад" Click="Back_OnClick"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

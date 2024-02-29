@@ -3,17 +3,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="AvaloniaApplication3.Инструкторы"
-        Background="#F7102D36"
-         Title="Таблица Инструкторы">
+        x:Class="AvaloniaApplication3.Учителя"
+        Background="#F7057F7F"
+        Title="Таблица Учителя"
+        Height="500"
+        Width="1000"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <TextBlock Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Инструкторы"</TextBlock>
+            <TextBlock Margin = "10 10 0 0" FontSize = "20" FontWeight="Bold"> Таблица "Учителя"</TextBlock>
             <StackPanel Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" Margin = "10 10 0 0"> Поиск по Фамилии инструктора: </TextBlock>
+                <TextBlock VerticalAlignment="Center" Margin = "10 10 0 0"> Поиск по Фамилии учителя: </TextBlock>
                 <TextBox Name="SearchFIO" Width="200" Margin ="65 10 0 0"></TextBox>
                 <TextBlock VerticalAlignment="Center"
-                           x:Name="FilterNum" Margin ="10 10 0 0">Фильтрация по Коду инструктора: </TextBlock>
+                           x:Name="FilterNum" Margin ="10 10 0 0">Фильтрация по Коду_учителя: </TextBlock>
                 <ComboBox Name="CmbNum" Width="200" Margin ="10 10 0 0" 
                           x:CompileBindings="False"
                 SelectionChanged="CmbNum_OnSelectionChanged">
@@ -27,8 +30,8 @@
             
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock VerticalAlignment="Center" Margin = "10 10 0 0"> Поиск по Коду_квалификации: </TextBlock>
-                    <TextBox Name="SearchPhone" Width="200" Margin ="33 10 0 0"></TextBox>
+                    <TextBlock VerticalAlignment="Center" Margin = "10 10 0 0"> Поиск по Коду_кабинета: </TextBlock>
+                    <TextBox Name="SearchKab" Width="200" Margin ="33 10 0 0"></TextBox>
                     <StackPanel Margin="10 12 00 0">
                         <Button Name="Add" Content="Добавить" Click="AddData"></Button>
                     </StackPanel>
@@ -44,14 +47,16 @@
                 </StackPanel>
             </StackPanel> 
             
-        <DataGrid Name="InstructorGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+        <DataGrid Name="TeachersGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Код" Binding="{Binding Код}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Фамилия}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Имя}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Отчество}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Стаж_работы" Binding="{Binding Стаж_работы}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Код_квалификация" Binding="{Binding Код_квалификация}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Код_специализация" Binding="{Binding Код_специализация}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Классное_руководство" Binding="{Binding Классное_руководство}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Код_кабинет" Binding="{Binding Код_кабинет}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Код_предмета" Binding="{Binding Код_предмета}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
             

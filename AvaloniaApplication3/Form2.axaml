@@ -5,30 +5,34 @@
         xmlns:avaloniaApplication3="clr-namespace:AvaloniaApplication3"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplication3.Form2"
-        Background="#F7102D36"
-    Title="Выбор таблицы данных">
+        Background="#F7057F7F"
+        Title="Выбор таблицы данных"
+        Height="280"
+        Width="350"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
-                    <Button Name="instructor" Content="Инструкторы" Click="Instructors"></Button>
+                    <Button Name="teachers" Content="Учителя" Click="Teachers"></Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
-                    <Button Name="client" Content="Клиенты" Click="Instructors"></Button>
+                    <Button Name="students" Content="Ученики" Click="Students"></Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
-                    <Button Name="abonement" Content="Абонемент" Click="Instructors"></Button>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
-                    <Button Name="gruppa" Content="Группа" Click="Instructors"></Button>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
-                    <Button Name="ras" Content="Расписание занятий" Click="Instructors"></Button>
+                    <Button Name="mugs" Content="Кружки" Click="Mugs"></Button>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 100 0 0">
                 <Button Name="exit" Content="Выход" Click="Exit_OnClick"></Button>
             </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical"/>
+                <StackPanel Orientation="Horizontal" Margin="100 10 0 0">
+                    <Button Name="lessons" Content="Уроки" Click="Lessons"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="100 10 0 0">
+                    <Button Name="schedule" Content="Недельное расписание уроков" Click="Schedule"></Button>
+                </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

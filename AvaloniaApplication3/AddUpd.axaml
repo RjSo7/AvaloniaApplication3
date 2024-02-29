@@ -4,16 +4,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="DobOb.AddUpd"
-        Background="#F7102D36"
-        Title="Добавление и редактирование данных">
+    Background="#F7057F7F"
+    Title="Добавление и редактирование данных"
+    Height="700"
+    Width="1000"
+    WindowStartupLocation="CenterScreen">
     <Grid>
         <UniformGrid Columns="1">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "10 35 0 0">ID: </TextBlock>
+                <TextBlock Margin = "10 35 0 0">Код: </TextBlock>
                 <TextBox Name="Kod" x:CompileBindings="False" Text="{Binding Код}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "10 35 0 0">Фамилия клиента: </TextBlock>
+                <TextBlock Margin = "10 35 0 0">Фамилия: </TextBlock>
                 <TextBox Name="Familia" x:CompileBindings="False" Text="{Binding Фамилия}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -21,16 +24,24 @@
                 <TextBox Name="Name" x:CompileBindings="False" Text="{Binding Имя}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Отчество: </TextBlock>
+                <TextBox Name="Otchestvo" x:CompileBindings="False" Text="{Binding Отчество}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
                 <TextBlock Margin = "10 35 0 0">Стаж_работы: </TextBlock>
-                <TextBox Name="Staj" x:CompileBindings="False" Text="{Binding Стаж_работы}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+                <TextBox Name="Staj" x:CompileBindings="False" Text="{Binding Стаж_работы}" Width="500" Height="80" Margin = "10 0 0 0"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "10 35 0 0">Код_квалификация: </TextBlock>
-                <TextBox Name="Kval" x:CompileBindings="False" Text="{Binding Код_квалификация}" Width="500" Height="80" Margin = "10 0 0 0"></TextBox>
+                <TextBlock Margin = "10 35 0 0">Классное_руководство: </TextBlock>
+                <TextBox Name="Klass" x:CompileBindings="False" Text="{Binding Классное_руководство}" Width="500" Height="80" Margin = "10 0 0 0"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "10 35 0 0">Код_специализация: </TextBlock>
-                <TextBox Name="Cpez" x:CompileBindings="False" Text="{Binding Код_специализация}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+                <TextBlock Margin = "10 35 0 0">Код_кабинет: </TextBlock>
+                <TextBox Name="Kab" x:CompileBindings="False" Text="{Binding Код_кабинет}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Код_предмета: </TextBlock>
+                <TextBox Name="Pred" x:CompileBindings="False" Text="{Binding Код_предмета}" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button Name="Save" Content="Сохранить" Click="Save_OnClick"  Margin = "10 15 0 20"></Button>
